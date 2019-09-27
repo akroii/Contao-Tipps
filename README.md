@@ -1,5 +1,5 @@
 # Contao ^4.x Tipps
- Some notes of daily work with contao
+ Some notes of daily work with contao. Most of them are the results of hours of searching the contao community, looking for a documentation 😐
 
 
 ## Installation
