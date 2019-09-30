@@ -6,7 +6,7 @@
 Database Collation `utf8mb4_unicode_ci`
 
 ## Utils
-find image by uuid `\StringUtil::binToUuid()`
+find image/file by uuid `\StringUtil::binToUuid()`
 
 ## Settings for config.yml
 ```
