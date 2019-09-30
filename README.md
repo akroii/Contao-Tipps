@@ -9,6 +9,7 @@ Database Collation `utf8mb4_unicode_ci`
 find image/file by uuid `\StringUtil::binToUuid()`
 
 ## Settings for config.yml
+### Security headers
 ```
 # Contao configuration
 contao:
