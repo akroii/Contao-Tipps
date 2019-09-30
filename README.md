@@ -6,7 +6,7 @@
 Database Collation `utf8mb4_unicode_ci`
 
 ## Utils
-find image/file by uuid `\StringUtil::binToUuid()` more powerful than findByPk... ¯\_(ツ)_/¯
+find image/file by uuid `\StringUtil::binToUuid()`. its more powerful than findByPk... ¯\_(ツ)_/¯
 
 ## Settings for config.yml
 ### Security headers
