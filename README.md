@@ -16,22 +16,8 @@ curl -s -w '\nLookup time:\t\t%{time_namelookup}\nConnect time:\t\t%{time_connec
 ## Settings for config.yml
 ### Security headers
 ```
-# Contao configuration
-contao:
-    url_suffix: ''
-    image:
-        imagine_options:
-            jpeg_quality: 100
-# Security configuration
-nelmio_security:
-    xss_protection:
-        enabled: true
-        mode_block: true
-    forced_ssl:
-        enabled: true
-        hsts_max_age: 2592000
-        hsts_subdomains: true
-        redirect_status_code: 301
+See Contao4 Boilerplate
+[See my Boilerplate](https://github.com/akroii/Contao4-Boilerplate/blob/master/app/config/config.yml)
 ```
 
 
