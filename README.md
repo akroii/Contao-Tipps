@@ -15,10 +15,10 @@ curl -s -w '\nLookup time:\t\t%{time_namelookup}\nConnect time:\t\t%{time_connec
 
 ## Settings for config.yml
 ### Security headers
-```
+
 See Contao4 Boilerplate
-[See my Boilerplate](https://github.com/akroii/Contao4-Boilerplate/blob/master/app/config/config.yml)
-```
+[See my Boilerplate](https://github.com/akroii/Contao4-Boilerplate/blob/master/app/config/config.yml#L1-L19)
+
 
 
 
