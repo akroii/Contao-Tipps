@@ -13,6 +13,7 @@ find image/file by uuid `\StringUtil::binToUuid()`. its more powerful than findB
 curl -s -w '\nLookup time:\t\t%{time_namelookup}\nConnect time:\t\t%{time_connect}\nSSL handshake time:\t%{time_appconnect}\nPre-Transfer time:\t%{time_pretransfer}\nRedirect time:\t\t%{time_redirect}\nStart transfer time:\t%{time_starttransfer}\n\nTotal time:\t\t%{time_total}\n' -o /dev/null https://website.de
 ```
 ### check your host
+taken from toflar https://github.com/contao/contao/issues/809#issuecomment-571509691
 ```
 <?php
 
