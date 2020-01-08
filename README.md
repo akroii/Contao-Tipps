@@ -12,6 +12,32 @@ find image/file by uuid `\StringUtil::binToUuid()`. its more powerful than findB
 ```
 curl -s -w '\nLookup time:\t\t%{time_namelookup}\nConnect time:\t\t%{time_connect}\nSSL handshake time:\t%{time_appconnect}\nPre-Transfer time:\t%{time_pretransfer}\nRedirect time:\t\t%{time_redirect}\nStart transfer time:\t%{time_starttransfer}\n\nTotal time:\t\t%{time_total}\n' -o /dev/null https://website.de
 ```
+### check your host
+```
+<?php
+
+require_once __DIR__.'/../vendor/autoload.php';
+$start = microtime(true);
+
+$finder = \Symfony\Component\Finder\Finder::create()
+    ->in(__DIR__.'/../vendor/contao')
+    ->files()
+    ->name('*.php')
+    ->contains('<?php')
+;
+
+$endFinder = microtime(true);
+$timeNeededToInstantiateFinder = $endFinder - $start;
+
+// Trigger iterator before measuring the time
+$count = count($finder);
+$timeNeededToFindFiles = microtime(true) - $endFinder;
+
+$output =  sprintf('I found %d PHP files in your "vendor/contao" directory.', $count) . "\n";
+$output .= sprintf('To do so, I used the Symfony Finder component which was instantiated within %02.2f seconds.', $timeNeededToInstantiateFinder) . "\n";
+$output .= sprintf('Searching the files itself took me %02.2f seconds.', $timeNeededToFindFiles) . "\n";
+```
+
 
 ## Settings for config.yml
 ### Security headers
