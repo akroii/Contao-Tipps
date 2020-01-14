@@ -37,7 +37,10 @@ $timeNeededToFindFiles = microtime(true) - $endFinder;
 $output =  sprintf('I found %d PHP files in your "vendor/contao" directory.', $count) . "\n";
 $output .= sprintf('To do so, I used the Symfony Finder component which was instantiated within %02.2f seconds.', $timeNeededToInstantiateFinder) . "\n";
 $output .= sprintf('Searching the files itself took me %02.2f seconds.', $timeNeededToFindFiles) . "\n";
+echo $output;
 ```
+## Contao Manager: Upgrade Contao to new Version LTS ##
+https://getcomposer.org/doc/articles/versions.md#writing-version-constraints
 
 
 ## Settings for config.yml
